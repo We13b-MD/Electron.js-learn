@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="./index.css"/>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>Hello World! and Hell from Electron renderer</title>
+  </head>
+  <style>
+
+h1{
+    color:greenyellow;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+  </style>
+  <body>
+    <h1>Hello World!</h1>
+    We are using Node.js <span id="node-version"></span>,
+    Chromium <span id="chrome-version"></span>,
+    and Electron <span id="electron-version"></span>.
+    <br>
+    <h1>Hello from Electron renderer</h1>
+    <p>👏</p>
+    <p id = "info"></p>
+    <script src = './renderer.js'></script>
+  </body>
+</html>
